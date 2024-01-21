@@ -1,0 +1,290 @@
+.navbar {
+    background-color: #FFA07A; /* Orange background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    color: #FFFFFF; /* White text */
+    font-size: 24px; /* Large text */
+  }
+  
+  .logo p {
+    margin: 0;
+    color: #FFFFFF; /* White text */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #FFFFFF; /* White text */
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    background-color: #FF4500; /* Darker orange for hover/active */
+  }
+  
+  .connect-button {
+    background-color: #FFDAB9; /* Lighter orange background */
+    padding: 10px 15px;
+  }
+  
+  .connect-button:hover {
+    background-color: #FFC085; /* Slightly darker orange for hover */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      padding-top: 10px;
+    }
+  }
+  
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #FFA07A; /* Replace with the actual color */
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .popular-beverages {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFDAB9; /* Replace with the actual color */
+  }
+  
+  .popular-beverages h1,
+  .popular-beverages h2 {
+    color: #000000; /* Replace with the actual color */
+  }
+  
+  .popular-beverages p {
+    color: #000000; /* Replace with the actual color */
+  }
+  
+  .beverage-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .beverage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .beverage-item img {
+    max-width: 150px;
+    height: auto; /* 保持图片宽高比 */
+    margin-bottom: 10px; /* 图片和文本之间的间隙 */
+  }
+  
+  .beverage-item p {
+    margin: 0; /* 段落的外边距为 0 */
+    font-weight: bold; /* 段落字体加粗 */
+    text-align: center; /* 文本居中对齐 */
+    width: 100%; /* 宽度设置为 100%，确保在其容器内居中 */
+  }
+  
+  
+  /* You can add more styling for responsive design, colors, fonts, etc. */
+  .footer {
+    background-color: #FFA07A; /* Orange background */
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-nav {
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 16px; /* Adjust as needed */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .footer-nav a:hover {
+    color: #FFD700; /* Gold color for hover */
+  }
+  
+  .social-links {
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    margin: 0 5px;
+  }
+  
+  .social-links img {
+    width: 24px; /* Adjust as needed */
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+  }
+  
+  /* Adjust the media query and add more as needed for responsiveness */
+  
+  .beverage-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 创建四列 */
+    grid-gap: 20px; /* 设置网格行与列之间的间隙 */
+    margin: 20px; /* 容器的外边距 */
+  }
+  
+  .beverage-item {
+    text-align: center; /* 文本居中对齐 */
+    margin-bottom: 20px; /* 每个饮料项底部的外边距 */
+  }
+  
+  .beverage-item img {
+    width: 100%; /* 图片宽度填充整个容器宽度 */
+    height: auto; /* 图片高度自动调整以保持宽高比 */
+    margin-bottom: 10px; /* 图片和文本之间的间隙 */
+  }
+  
+  .beverage-item p {
+    margin: 0; /* 段落的外边距设为0 */
+    font-weight: bold; /* 段落字体加粗 */
+  }
+  
+  /* 响应式布局 */
+  @media (max-width: 1024px) {
+    .beverage-container {
+      grid-template-columns: repeat(2, 1fr); /* 屏幕宽度较小时，每行两列 */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .beverage-container {
+      grid-template-columns: 1fr; /* 屏幕更小时，每行一列 */
+    }
+  }
+  
+  .beverage-item img {
+    max-width: 150px; /* 设置图片最大宽度 */
+    height: auto; /* 保持图片宽高比 */
+    margin-bottom: 10px; /* 图片和文本之间的间隙 */
+    display: block; /* 确保图片不会在行内显示，这样可以应用 margin */
+    margin-left: auto; /* 这两个 margin 设置是为了居中图片 */
+    margin-right: auto;
+  }
+  
+
+  .beverage-item {
+    min-width: 150px; /* 或者你需要的任何宽度，以确保足够空间 */
+    /* 其他样式保持不变 */
+  }
+  
+
+  .beverage-item {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center; /* 水平居中图片和文本 */
+    margin: 10px;
+    text-align: center;
+    height: 250px; /* 为 '.beverage-item' 设置一个固定高度，确保所有项目相同 */
+  }
+  
+  .beverage-item img {
+    max-width: 150px; /* 图片最大宽度 */
+    width: 100%; /* 图片宽度填充整个容器宽度 */
+    height: auto; /* 保持图片宽高比 */
+    margin-bottom: 10px; /* 图片和文本之间的间隙 */
+  }
+  
+  .beverage-item p {
+    margin-top: auto; /* 自动将段落推到底部 */
+    font-weight: bold; /* 段落字体加粗 */
+  }
+  
+
+  .our-story-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff5e6; /* 根据图片的背景色调整 */
+    padding: 40px; /* 根据图片的内边距调整 */
+    border-radius: 10px; /* 根据图片的圆角大小调整 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 根据图片的阴影调整 */
+    margin: auto; /* 使容器居中显示 */
+    max-width: 1000px; /* 根据需要调整最大宽度 */
+}
+
+.text-section h2 {
+    color: #333; /* 标题颜色 */
+    font-size: 2em; /* 标题大小 */
+    font-weight: bold; /* 标题粗细 */
+    margin-bottom: 0.5em; /* 标题与文本的间距 */
+}
+
+.text-section p {
+    color: #333; /* 段落文本颜色 */
+    font-size: 2em; /* 段落文本大小 */
+    margin-bottom: 2em; /* 段落之间的间距 */
+}
+
+.image-section img {
+    max-width: 200px; /* 根据实际图片大小调整 */
+    height: auto; /* 保持图片宽高比 */
+}
+
